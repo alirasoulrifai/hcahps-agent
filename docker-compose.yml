@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build: .
+    container_name: hcahps_agent
+    ports:
+      - "8501:8501"
+    environment:
+      # Connect to host's Ollama instance. 
+      # 'host.docker.internal' resolves to the host machine's IP on Windows/Mac Docker Desktop.
+      - OLLAMA_URL=http://host.docker.internal:11434
+    volumes:
+      # Mount the current directory for development (live reload)
+      - ./:/app
+      # Avoid overwriting container's node_modules or venv if present (optional safety)
+    restart: unless-stopped

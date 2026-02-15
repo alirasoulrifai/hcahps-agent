@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+matplotlib
+faiss-cpu
+torch
+sentence-transformers
+reportlab
+requests
+plotly
+pytest
+huggingface_hub

@@ -1,0 +1,7 @@
+*.faiss
+*.npy
+HCAHPS_RAG_Summaries.csv
+HCAHPS_RAG_Facts.csv
+__pycache__/ 
+*.pyc 
+files.zip 
