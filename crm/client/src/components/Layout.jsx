@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import {
-  LayoutDashboard, Hospital, Ticket, CalendarClock,
+  LayoutDashboard, Building2, Ticket, CalendarClock,
   Package, Search, Menu, X
 } from 'lucide-react'
 
 const navItems = [
   { to: '/',               icon: LayoutDashboard, label: 'Dashboard'       },
-  { to: '/installed-base', icon: Hospital,        label: 'Installed Base'  },
+  { to: '/installed-base', icon: Building2,       label: 'Installed Base'  },
   { to: '/tickets',        icon: Ticket,          label: 'Service Tickets' },
   { to: '/maintenance',    icon: CalendarClock,   label: 'PM Calendar'     },
   { to: '/spare-parts',    icon: Package,         label: 'Spare Parts'     },
